@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title> E-Reader </title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/A1 Starter books">A1 Starter books</a>
+      <a href="/A2 Elementary books">A2 Elementary books</a>
+      <a href="/form">form</a>
+    </div>
+
+     <center>
+    <h1>Your book</h1>
+    <script src="{{ url_for ('static', filename='js/script.js')}}"></script>
+    <h3>{{erormsg}}</h3>
+    <form action="/form" method="POST" style="margin-top: 5%;">
+     <h3> Name</h3>
+     <input type="text" name= "username" placeholder="" id="username"> <br><br>
+     <h3> Level</h3>
+     <input type="radio" name= "levels" value="A2 Elementary books" id="Level"> 
+     <label for="Level">A2 Elementary books</label>
+     <input type="radio" name= "levels" value="A1 Starter books" id="Level1">
+     <label for="Level1">A1 Starter books</label> <br> <br>
+     <h3>Your book</h3>
+     <textarea rows = "4" cols='40' type="text" name= "namethebook" placeholder=""> </textarea>
+     <br> <br>
+     <h1> ⇩ </h1>
+     <input type="submit" value="Submit" class="button">
+   </center>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

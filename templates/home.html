@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>  E-Reader</title> 
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>  
+  </head> 
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/A1 Starter books">A1 Starter books</a>
+      <a href="/A2 Elementary books">A2 Elementary books</a>
+      <a href="/form">form</a>
+    </div> 
+   <center> <h1>welcome to E-Reader</h1></center> 
+   <center>  <p>If you are not good at English, here you can find some books to improve your English </p></center> 
+
+<br>
+<br>
+
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-4">
+<center> <h2> A1 Starter books </h2></center> 
+
+<center> <h4>If you are not good in English, you can start reading books at the first level and then move to the second level </h4></center> 
+<center> 
+<a href="/A1 Starter books"> <button class="button">A1 Starter books</button></a></div></center> 
+<div class="col-1"></div>
+<div class="col-4">
+<center> <h2>A2 Elementary books </h2></center> 
+<center> <h4>This level is higher than the first level. When you finish reading the first level books, you can read these books</h4></center> 
+<center> 
+<a href="/A2 Elementary books"> <button class="button"> A2 Elementary books</button></a></center> 
+</div> </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{url_for('static', filename='js/script.js')}}"></script>
+    </body>
+  </body>
+</html>

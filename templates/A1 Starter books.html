@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title> E-Reader </title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/A1 Starter books">A1 Starter books</a>
+      <a href="/A2 Elementary books">A2 Elementary books</a>
+      <a href="/form">form</a>
+    </div>
+<center><h1> A1 Starter books</h1></center>
+{%for post in A1_post%}
+      <h2>{{post.username}}</h2><br>
+      <h4>{{post.namethebook}}</h4>
+{%endfor%}
+
+ <br>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-4">
+  <center> <h3> The Cat </h3></center> 
+  <center> <h4> By:John Escott </h4></center> 
+  <br>
+	<center> <img src="https://kbimages1-a.akamaihd.net/80f39d7e-1838-4a43-8b1b-83ef9faad4da/353/569/90/False/the-cat-starter-level-oxford-bookworms-library.jpg" style="width:300px; height:300px;"></div></center> 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+

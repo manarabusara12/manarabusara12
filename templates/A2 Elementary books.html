@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title> E-Reader </title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/A1 Starter books">A1 Starter books</a>
+      <a href="/A2 Elementary books">A2 Elementary books</a>
+      <a href="/form">form</a>
+    </div>
+
+    <br>
+ <center><h1> A2 Elementary books</h1></center> 
+ {%for post in A2E_post%}
+      <h2>{{post.username}}</h2><br>
+      <h5>{{post.story}}</h4>
+ {%endfor%}
+
+  <br>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-4">
+ <center> <h3> Aladdin </h3></center> 
+ <center> <h4> By:Ruth Hobart </h4></center> 
+  <br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9wIUnyYFQS8N9m_ozW9QurIIFcVDwOn0uuBH4gwGNYgWqPZFuT2n5YETAo78kb3QMWOE&usqp=CAU" style="width:300px; height:300px;"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+ <script src="{{url_for('static', filename='js/script.js')}}"></script>
+ 
+
+ </body>
+ </html>
